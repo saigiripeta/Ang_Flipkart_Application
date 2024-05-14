@@ -1,0 +1,18 @@
+
+<div class="d-flex flex-wrap">
+    <div class="m-3" *ngFor="let product of products">
+    <img [src]="product.image" height="100" width="100" alt="">
+    <p>
+        <a routerLink="/details/{{product.id}}" class="btn btn-primary">Details</a>
+    </p>
+    </div>
+    <div class="col-9">
+
+
+        <button routerLink="/home">Back to Products</button>   <br>
+                <!-- <a routerLink="/electronics">Back to Electronics</a>  -->
+
+      
+        <router-outlet></router-outlet>
+    </div>
+</div>

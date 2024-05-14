@@ -1,0 +1,23 @@
+<div class="container-fluid">
+    <header class="m-2 bg-dark text-white p-2 d-flex justify-content-between">
+        <div>
+            <h2>welcome to Flipkart</h2>
+        </div>
+        <div class="nav">
+            <a routerLink="home">Home</a>
+            <a routerLink="jewelery">Jewelery</a>
+            <a routerLink="electronics">Electronics</a>
+            <a routerLink="mens">Mens</a>
+            <a routerLink="womens">Womens</a>
+            
+        </div>
+        <div>
+            <span class="bi bi-heart me-2"></span>
+            <span class="bi bi-person me-2"></span>
+            <span class="bi bi-search me-2"></span>
+        </div>
+    </header>
+    <section>
+        <router-outlet></router-outlet>
+    </section>
+</div>

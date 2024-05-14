@@ -1,0 +1,40 @@
+<h2>Product Details</h2>
+ <div class="row">
+    <div class="col-3">
+        <dl>
+            <dt>Title</dt>
+            <dd>{{product.title}}</dd>
+            <dt>Price</dt>
+            <dd>  $:{{ product.price}}</dd>
+            <dt>Rating</dt>
+            <dd> <span class="bi bi-star-fill"></span> {{product.rating.rate}}</dd>  <br> <br>
+            <dd>
+                <a routerLink="more/{{product.id}}">More</a> <br> &nbsp; 
+            </dd>
+            <dd>
+                <a routerLink="/home">Back to Home Page</a><br> &nbsp; 
+            </dd>
+            <dd>
+                <a routerLink="/jewelery">Go To Jewelery</a><br> &nbsp; 
+            </dd>
+            <dd>
+                <a routerLink="/electronics">Go To Electronics</a><br>  &nbsp;
+            </dd>
+            <dd>
+                <a routerLink="/mens">Go To Mens</a><br>  &nbsp;
+            </dd>
+            <dd>
+                <a routerLink="/womens">Go To Womens</a><br>  &nbsp;
+            </dd>
+            <router-outlet></router-outlet>
+         </dl>
+    </div>
+    <!-- <div class="col-9">
+        
+        <a routerLink="/jewelery">Go  to Jewelery</a>  <br> 
+        <a routerLink="/electronics">Go to Electronics</a>  <br>
+        <a routerLink="/mens">Go to Mens</a>  <br>
+        <a routerLink="/womens">Go to Womens</a>  <br>
+        <router-outlet></router-outlet>
+    </div> -->
+ </div>

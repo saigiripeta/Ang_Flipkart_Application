@@ -1,0 +1,22 @@
+img{
+    display: flex;
+}
+div{
+    margin:20px;
+    padding: 66px;
+    justify-content: center;
+}
+button{
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #00ff62;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }

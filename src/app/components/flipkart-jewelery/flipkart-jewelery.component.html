@@ -1,0 +1,28 @@
+<!-- <div class="container">
+    <div class="d-flex flex-wrap">
+
+    
+    <br>
+    <div *ngFor="let product of products" class="m-2">
+        <img [src]="product.image" alt="" height="100" width="100" >
+
+    </div>
+</div>
+</div> -->
+
+<div class="d-flex flex-wrap">
+    <div class="m-3" *ngFor="let product of products">
+    <img [src]="product.image" height="100" width="100" alt="">
+    <p>
+        <a routerLink="/details/{{product.id}}" class="btn btn-primary">Details</a>
+    </p>
+    </div>
+    <div class="col-9">
+        <!-- <a routerLink="/jewelery">Back to jewelery</a> <br> -->
+
+        <button routerLink="/home">Back to Products</button>
+
+      
+        <router-outlet></router-outlet>
+    </div>
+</div>
